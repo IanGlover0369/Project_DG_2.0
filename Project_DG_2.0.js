@@ -254,6 +254,7 @@ class Drink{
    $("#ingDisMix1").text(mix[4][0]);
    $("#ingDisMix2").text(mix[4][1]);
    $("#ingDisMix3").text(mix[4][2]);
+   $("#ingDisMix4").text(mix[4][3]);
    console.log(mix);
   });
   
@@ -348,8 +349,8 @@ class Drink{
    $("#deleteButton").show();
    $("#titleGarnish").fadeIn(600);
    $(".ingBtnGarnish").fadeIn(600);
-   if(mix[4].length >= 4){
-    mix[4].splice(3);
+   if(mix[4].length >= 5){
+    mix[4].splice(4);
    }
    console.log(mix)
   }); 
@@ -940,7 +941,7 @@ class Drink{
    $("#deleteButton2").click(function(){  
    var x = document.getElementById("ingredientsDisplay");
    if(mix[4].length >= 5){
-    mix[4].splice(4);
+    mix[4].splice(3);
    } else if(mix[4].length <= 1){
     mix[4] = [];
     mix[3] = "";
@@ -1007,12 +1008,19 @@ class Drink{
    
    // mixers 
    if(mix[4].length >= 4){
-    mix[4].splice(3);
-    if(mix[4].length === 3){
+    mix[4].splice(4);
+    if(mix[4].length === 4){
      $("#ingDisMix2").show();
      $("#ingDisMix3").show();
+     $("#ingDisMix4").show();
+    } else if(mix[4] === 3){
+     $("#ingDisMix2").show();
+     $("#ingDisMix3").show();
+     $("#ingDisMix4").hide();
     } else if(mix[4] === 2){
      $("#ingDisMix2").show();
+     $("#ingDisMix3").hide();
+     $("#ingDisMix4").hide();
     }
    } else if(mix[4].length === 4){
     $("#ingDisMix2").show();
@@ -1021,12 +1029,15 @@ class Drink{
    } else if(mix[4].length === 3){
     $("#ingDisMix2").show();
     $("#ingDisMix3").show();
+    $("#ingDisMix4").hide();
    } else if(mix[4].length === 2){
     $("#ingDisMix2").show();
     $("#ingDisMix3").hide();
+    $("#ingDisMix4").hide();
    } else if(mix[4].length <= 1){
     $("#ingDisMix2").hide();
     $("#ingDisMix3").hide();
+    $("#ingDisMix4").hide();
    }
    // garnish
    if(mix[5].length >= 3){
@@ -1058,4 +1069,4 @@ class Drink{
   
   
   
- }); /* jQuery end tag */
+ }); // jQuery end tag 
