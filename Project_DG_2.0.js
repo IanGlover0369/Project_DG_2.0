@@ -1069,4 +1069,4 @@ class Drink{
   
   
   
- }); // jQuery end tag 
+ }); /* jQuery end tag */
