@@ -207,6 +207,70 @@ class Drink{
    $("#ingDisGar1").text("...add a garnish...");
    $("#ingDisGar2").text("...add a garnish...");
    console.log(mix)
+   
+   /* Drink List Reset */
+   $("#AFBrecipeTitle").hide();
+  $("#AFBrecipe").hide();
+  $("#AMrecipeTitle").hide();
+  $("#AMrecipe").hide();
+  $("#BSrecipeTitle").hide();
+  $("#BSrecipe").hide();
+  $("#BOSrecipeTitle").hide();
+  $("#BOSrecipe").hide();
+  $("#CARArecipeTitle").hide();
+  $("#CARArecipe").hide();
+  $("#CHURrecipeTitle").hide();
+  $("#CHURrecipe").hide();
+  $("#COCOrecipeTitle").hide();
+  $("#COCOrecipe").hide();
+  $("#CUCUMrecipeTitle").hide();
+  $("#CUCUMrecipe").hide();
+  $("#DROPrecipeTitle").hide();
+  $("#DROPrecipe").hide();
+  $("#EMrecipeTitle").hide();
+  $("#EMrecipe").hide();
+  $("#FGPrecipeTitle").hide(); 
+  $("#FGPrecipe").hide();
+  $("#FGPFBrecipeTitle").hide();
+  $("#FGPFBrecipe").hide();
+  $("#JGrecipeTitle").hide();
+  $("#JGrecipe").hide();
+  $("#MASrecipeTitle").hide();
+  $("#MASrecipe").hide();
+  $("#MBDrecipeTitle").hide();
+  $("#MBDrecipe").hide();
+  $("#MICHrecipeTitle").hide();
+  $("#MICHrecipe").hide();
+  $("#NATrecipeTitle").hide();
+  $("#NATrecipe").hide();
+  $("#OOFrecipeTitle").hide();
+  $("#OOFrecipe").hide();
+  $("#PMrecipeTitle").hide();
+  $("#PMrecipe").hide();
+  $("#PALrecipeTitle").hide();
+  $("#PALrecipe").hide();
+  $("#PPMrecipeTitle").hide();
+  $("#PPMrecipe").hide();
+  $("#SANGrecipeTitle").hide();
+  $("#SANGrecipe").hide();
+  $("#SOrecipeTitle").hide();
+  $("#SOrecipe").hide();
+  $("#SBFrecipeTitle").hide();
+  $("#SBFrecipe").hide();
+  $("#TNTrecipeTitle").hide();
+  $("#TNTrecipe").hide();
+  $("#TNTRRrecipeTitle").hide();
+  $("#TNTRRrecipe").hide();
+  $("#TNTRRFBrecipeTitle").hide();
+  $("#TNTRRFBrecipe").hide();
+  $("#TROPMrecipeTitle").hide();
+  $("#TROPMrecipe").hide();
+  $("#modalTextDrinkList").fadeIn(600);
+  $("#drinkListItems").fadeIn(600);
+  $("#backButton").hide();
+  $("#recipeDiv").hide();
+  $("#drinkListTitleDiv").show();
+  $("#drinkListDrinkNames").show();
   });
   
   $(".ingBtnGlass").click(function(){
@@ -1069,4 +1133,4 @@ class Drink{
   
   
   
- }); /* jQuery end tag */
+ }); // jQuery end tag 
