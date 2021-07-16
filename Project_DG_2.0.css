@@ -343,7 +343,7 @@
    cursor: pointer;
  }
  
- #AFBrecipeTitle,#AMrecipeTitle,#BSrecipeTitle,BOSrecipeTitle,#CARArecipeTitle,#CHURrecipeTitle,#COCOrecipeTitle,#CUCUMrecipeTitle,#DROPrecipeTitle,#EMrecipeTitle,#FGPrecipeTitle,#FGPFBrecipeTitle,#JGrecipeTitle,#MASrecipeTitle,#MBDrecipeTitle,#MICHrecipeTitle,#NATrecipeTitle,#OOFrecipeTitle,#PMrecipeTitle,#PALrecipeTitle,#PPMrecipeTitle,#SANGrecipeTitle,#SOrecipeTitle,#SBFrecipeTitle,#TNTrecipeTitle,#TNTRRrecipeTitle,#TNTRRFBrecipeTitle,#TROPMrecipeTitle {
+ #AFBrecipeTitle,#AMrecipeTitle,#BSrecipeTitle,#BOSrecipeTitle,#CARArecipeTitle,#CHURrecipeTitle,#COCOrecipeTitle,#CUCUMrecipeTitle,#DROPrecipeTitle,#EMrecipeTitle,#FGPrecipeTitle,#FGPFBrecipeTitle,#JGrecipeTitle,#MASrecipeTitle,#MBDrecipeTitle,#MICHrecipeTitle,#NATrecipeTitle,#OOFrecipeTitle,#PMrecipeTitle,#PALrecipeTitle,#PPMrecipeTitle,#SANGrecipeTitle,#SOrecipeTitle,#SBFrecipeTitle,#TNTrecipeTitle,#TNTRRrecipeTitle,#TNTRRFBrecipeTitle,#TROPMrecipeTitle {
   font-size: 3vh;
   /*margin-top: 5%;*/
  }
@@ -424,7 +424,13 @@
  
  /**********************************************************************************************************************************************************************/
  
- @media (max-width: 1000px){ 
+ @media (max-width: 414px){ 
+  
+/* Header */
+
+  #tntLogo, #menu{
+    display: none;
+  }
   
   .orderDisplay {
    grid-area: ordDis;
@@ -441,13 +447,17 @@
   }
   
   .orderDisplayButtons {
-   width: 90vw;
-   height: 5vh;
+   padding: 1vh;
+   width: 18vw;
+   height: 9vh;
    border: 2px solid dark grey;
    background-color: black;
    opacity: 0.87;
    color: white;
-   font-size: 2vh;
+   font-size: 1.8vh;
+   justify-content: center;
+   position: relative;
+   top: -3vh;
   }
   
   #orderDisplayText {
@@ -456,49 +466,118 @@
    background: white;
    text-align: center;
    font-size: 2vh;
+   position: fixed;
+   top: 27vw;
   }
   
+
+/* Body */
+
+
+#btnDisplayTitles{
+  /*border: 2px solid red;*/
+  border-bottom: 2px solid rgb(44,47,56);
+  /*position: relative;*/
+  top: 0;
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 2% 0 2% 0;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 1px 1px 7px black, 0 0 20px black, 0 0 10px black;
+  font-size: 2vh;
+  position: -webkit-sticky;
+  position: sticky;
+ }
+
+
   .ingBtnDisplay {
-   height: 70vh;
-   display: flex;
-   flex-wrap: row-wrap;
-   align-items: center;
-   justify-content: center;
-   background: url("https://images.squarespace-cdn.com/content/v1/5ccc970f7046802e565771ae/1559327414336-L88G7ZEDFKPNBZ88DDDK/ke17ZwdGBToddI8pDm48kDVEj010BbXsLnm509AHjVF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UWiOgHWyWfC8BdxC_WuXfvhWFtDdzCpB3PJsO8_z2e5f_W3y_yy4MVWH39a9Q36QsA/SCB-COVER-BARS.jpg?format=2500w");
+   height: 60vh;
+   background: black; 
    background-size: cover;
-   overflow: scroll;
+   /*overflow: scroll;*/
+ }
+
+ .ingButtons{
+  /*border: 2px solid red; */
+  position: relative;
+  z-index: 1;
+  height: 59vh;
+  width: 95vw;
+ }
+
+ .allButtonStyle{
+  width: 18vw;
+  height: 9vh; 
+  font-size: 1.5vh;
+  border-radius: 10% ;
+  border: 2px solid dark grey;
+  background-color: black;
+  opacity: 0.87;
+  color: white;
+ }
+
+ #glassBtnContainer{
+  /*border: 2px solid red;*/
+  position: absolute;
+  top: 010vh;
+  height: 35vh;
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
  }
  
-  /*
+  
   .ingBtnGlass{
-   width: 20vw;
-   height: 10vh;
-   font-size: 35px;
-   
-   border-radius: 10% ;
+   width: 21vw;
+   height: 10.5vh;
+   font-size: 1.8vh;
+   border-radius: 10%;
    border: 2px solid dark grey;
    padding: 15px 20px;
    background-color: black;
    opacity: 0.87;
    color: white;
   }
-  */
-  /*
-  .ingButtons{
-   border: 2px solid red;
-   height: 100vh;
-  }
+
+  .ingBtnLiquor{
+    display: none;
+    position: relative;
+    top: -.1vh;
+    width: 21vw;
+    height: 10.5vh;
+    margin: 5px;
+   }
   
+  
+
   
   .footer{
-   height: 10vh;
+   height: 14vh;
    width: 100vw;
    display: flex;
    background:url("http://wallpapercave.com/wp/9OsQHDB.jpg"); 
    align-items: center;
    justify-content: center;
    border-top: 2px solid black;
-  
  }
- 
+
+
+ .footerButtons {
+  width: 17vw;
+  height: 8.5vh;
+  margin: 4px;
+  padding: 15px 20px;
+  border: 2px solid dark grey;
+  background-color: black;
+  opacity: 0.87;
+  color: white;
+  font-size: 1.5vh;
+  border-radius: 12.5%;
+ } 
    
