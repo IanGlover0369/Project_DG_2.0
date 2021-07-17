@@ -21,6 +21,14 @@
   outline: 0;
   background-color: rgb(44,47,56);
  }
+
+ #tntLogo2{/*
+  display: none;
+  */
+  position: absolute;
+  opacity: 30%;
+  height: 40vh;
+}
  
  .orderDisplay {
   position: relative;
