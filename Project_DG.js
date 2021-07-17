@@ -11,7 +11,7 @@ class Drink{
   };
  };
  
- //drinks for permanent library...............................................................................................
+ //drinks for permanent library................................................................................................
  let aldoronaFB = new Drink("Aldorona (Fish Bowl)", "Fish Bowl", ["El Jimador 6 oz"], "Triple Sec 2 oz", ["Lime Juice 1.5 oz", "Margarita Mix 8 oz"], ["Coronita", "Lime Wheel"]);
  let avocadoMargarita = new Drink("Avocado Margarita", "Coupe Glass", ["Don Julio Anejo 1.5 oz"], "Cointreau .5 oz", ["Avocado Sour Mix 3 oz", "Lime Juice .75 oz"], ["Lime Wheel"]);
  let babyStout = new Drink("Baby Stout", "Rocks Glass", ["Patron XO 1 oz"], "Bailey's Irish Cream (Float)", ["Coffee 3 oz"], ["Coffee Bean"]);
