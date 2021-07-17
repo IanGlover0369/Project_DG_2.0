@@ -16,7 +16,7 @@ class Drink{
  let avocadoMargarita = new Drink("Avocado Margarita", "Coupe Glass", ["Don Julio Anejo 1.5 oz"], "Cointreau .5 oz", ["Avocado Sour Mix 3 oz", "Lime Juice .75 oz"], ["Lime Wheel"]);
  let babyStout = new Drink("Baby Stout", "Rocks Glass", ["Patron XO 1 oz"], "Bailey's Irish Cream (Float)", ["Coffee 3 oz"], ["Coffee Bean"]);
  let bloodOrangeAndSage = new Drink("Blood Orange and Sage", "Rocks Glass", ["Corazon Reposado 1.5 oz"], "Solerno .5 oz", ["Blood Orange Juice .75 oz", "Honey Syrup .5 oz"], ["Blood Orange Slice", "Sage (2-3 Leaves)"]);
- let carajillo = new Drink("Carajillo", "Rocks Glass", "None", "Licor 43 1.5 oz", ["Coffee 3 oz"], ["Lemon Twist"]);
+ let carajillo = new Drink("Carajillo", "Rocks Glass", ["None"], "Licor 43 1.5 oz", ["Coffee 3 oz"], ["Lemon Twist"]);
  let churchill = new Drink("Churchill", "Rocks Glass", ["Four Roses Bourbon 1.5 oz"], "Ancho Reyes Chili Liqueur .5 oz", ["Agave .75 oz", "Blackberry (1 Muddled)", "Lemon Juice .5 oz", "Orange (1 Slice Muddled)"], ["Blackberry and Orange Slice (Flag)"]);
  let cocorita = new Drink("CocoRita", "Coupe Glass", ["1800 Coconut 1.5 oz"], "Cointreau .5 oz", ["Coconut Puree 1 oz", "Lime Juice .5 oz", "Pineapple Juice .5 oz"], ["Lime Wheel"]);
  let cucumberita = new Drink("CucumbeRita", "Margarita Glass", ["Milagro Reposado 1.5 oz"], "Cointreau .5 oz", ["Agave .5 oz", "Cayenne (2 Shakes)", "Cucumber (3 Slices Muddled)", "Lime Juice 2 oz"], ["Cucumber Wheel"]);
@@ -27,7 +27,7 @@ class Drink{
  let jaliscoGardens = new Drink("Jalisco Gardens", "Rocks Glass", ["Volcan Blanco 1.5 oz"], "Ancho Reyes Verde Liqueur .5 oz", ["Agave .75 oz", "Lime Juice .75 oz", "Tomatillo (1 Quarter Muddled)"], ["Lime Wheel"]);
  let maserita = new Drink("Maserita", "Margarita Glass", ["Milagro Silver 2 oz"], "Grand Marnier (Float)", ["Agave 1 oz", "Happy Juice 3 oz"], ["Lime Wheel"]);
  let mexicanBullDog = new Drink("Mexican Bull Dog", "Rocks Glass", ["1800 Reposado 1 oz"], "St. George Nola Coffee Vodka 1.5 oz", [ "Cola (Splash)", "Cream (Float)"], ["None"]);
- let michelada = new Drink("Michelada", "Beer Mug", "None", "None", ["Dos Equis", "Michelada Mix 5 oz"], ["Lime Wheel"]);
+ let michelada = new Drink("Michelada", "Beer Mug", ["None"], "None", ["Dos Equis", "Michelada Mix 5 oz"], ["Lime Wheel"]);
  let naturita = new Drink("Naturita", "Hurricane Glass", ["Altos Blanco 2 oz"], "None", ["Agave 1 oz", "Happy Juice 2 oz"], ["Lime Wheel"]);
  let oaxacanOldFashioned = new Drink("Oaxacan Old Fashioned", "Rocks Glass", ["Altos Reposado 1.5 oz", "Los Vecinos Espadin Mezcal .5 oz"], "None", ["Agave .25 oz", "Angostura Bitters (2 Dashes)"], ["Flamed Orange Peel"]);
  let pacificMule = new Drink("Pacific Mule", "Copper Mug", ["St. George Green Chili Vodka 1.5 oz"], "None", ["Agave .25 oz", "Cucumber (1 Slice Muddled)", "Ginger Beer 4 oz", "Lime Juice .25 oz"], ["Cucumber Slice (Length)", "Lime Wheel"]);
@@ -343,7 +343,7 @@ class Drink{
    $(".ingBtnLiqueur").fadeIn(600);
    $("#ingBtnLiqueurNone").show();
    $("#ingBtnLiqueurNext").show();
-   mix.splice(2, 1, this.value);
+   mix[2] = [this.value];
    console.log(mix);
    });
   
@@ -360,7 +360,7 @@ class Drink{
    $("#deleteButton3").hide();
    $("#ingBtnMixersNext").show();
    $("#ingDisplayLiqueur").text(this.value);
-   mix.splice(3, 1, this.value);
+   mix[3] = this.value;
    console.log(mix);
   });
   
