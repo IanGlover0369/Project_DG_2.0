@@ -434,7 +434,7 @@
 
   #tntLogo2{
     position: fixed;
-    opacity: 0.4;
+    opacity: 1;
     height: 40vh;
   }
   
@@ -584,4 +584,142 @@
   font-size: 1.5vh;
   border-radius: 12.5%;
  } 
-   
+
+
+ /* Result Modal */
+
+ #myModal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  padding-top: 15vh;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content/Box */
+ .modal-content{
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  margin: 2% auto; /* 5% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 85%;
+ }
+
+ #modalImage, #modalImage2{
+  border: 1px inset white;
+  margin-top: 5%;
+  margin-left: 4%;
+  width: 70vw;
+  height: auto;
+  padding: 5%;
+ }
+
+ /* Drink List Modal */
+
+ .previous {
+  display: none;
+  margin-top: 2%;
+  color: #aaa;
+  float: left;
+  font-size: 2.2vh;
+  cursor: pointer;
+ }
+
+ #modalImage2{
+   margin-right: 7%;
+ }
+
+ #modalImage2{
+   width: 70vw;
+ }
+
+ .modal-content2{
+  background-color: black;
+  color: white;
+  font-size: 2.5vh;
+  margin: 7% auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+  height: 93%;
+ }
+ 
+ #modalTextDrinkList{
+   padding-left: 5vw;
+ }
+
+ #drinkListItems{
+   font-size: 1.8vh;
+ }
+
+ #recipeTitleDiv,#AFBrecipeTitle,#AMrecipeTitle,#BSrecipeTitle,#BOSrecipeTitle,#CARArecipeTitle,#CHURrecipeTitle,#COCOrecipeTitle,#CUCUMrecipeTitle,#DROPrecipeTitle,#EMrecipeTitle,#FGPrecipeTitle,#FGPFBrecipeTitle,#JGrecipeTitle,#MASrecipeTitle,#MBDrecipeTitle,#MICHrecipeTitle,#NATrecipeTitle,#OOFrecipeTitle,#PMrecipeTitle,#PALrecipeTitle,#PPMrecipeTitle,#SANGrecipeTitle,#SOrecipeTitle,#SBFrecipeTitle,#TNTrecipeTitle,#TNTRRrecipeTitle,#TNTRRFBrecipeTitle,#TROPMrecipeTitle {
+  /*border: 2px solid red;*/
+  font-size: 2.75vh;
+  padding-left: 1%;
+  padding-top: 10vh;
+ }
+
+ #recipeIngredientDiv,#AFBrecipe,#AMrecipe,#BSrecipe,#BOSrecipe,#CARArecipe,#CHURrecipe,#COCOrecipe,#CUCUMrecipe,#DROPrecipe,#EMrecipe,#FGPrecipe,#FGPFBrecipe,#JGrecipe,#MASrecipe,#MBDrecipe,#MICHrecipe,#NATrecipe,#OOFrecipe,#PMrecipe,#PALrecipe,#PPMrecipe,#SANGrecipe,#SOrecipe,#SBFrecipe,#TNTrecipe,#TNTRRrecipe,#TNTRRFBrecipe,#TROPMrecipe{
+   font-size: 2vh;
+   padding: 3vw;
+   height: 50vh;
+ }
+
+ /* Mixer Modal */
+
+ #mixerModalContent{
+   margin-top: 5%;
+   height: 95vh;
+   width: 90vw;
+ }
+ 
+ #ingredientsDisplay{
+  /*border: 2px solid red;*/
+  position: relative;
+  top: 1%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+ }
+ 
+ .mixerIngredients{
+  position: relative;
+ }
+ 
+ .ingredients {
+  position: relative;
+  width: 60%;
+  margin-bottom: 10px;
+  padding: 1%;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: normal;
+ }
+
+ #ingDisplayContainer{
+  border: 1px inset white;
+  height: 80vh;
+  width: 70vw;
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+ }

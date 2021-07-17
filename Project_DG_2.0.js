@@ -30,7 +30,7 @@ class Drink{
  let michelada = new Drink("Michelada", "Beer Mug", ["None"], "None", ["Dos Equis", "Michelada Mix 5 oz"], ["Lime Wheel"]);
  let naturita = new Drink("Naturita", "Hurricane Glass", ["Altos Blanco 2 oz"], "None", ["Agave 1 oz", "Happy Juice 2 oz"], ["Lime Wheel"]);
  let oaxacanOldFashioned = new Drink("Oaxacan Old Fashioned", "Rocks Glass", ["Altos Reposado 1.5 oz", "Los Vecinos Espadin Mezcal .5 oz"], "None", ["Agave .25 oz", "Angostura Bitters (2 Dashes)"], ["Flamed Orange Peel"]);
- let pacificMule = new Drink("Pacific Mule", "Copper Mug", ["St. George Green Chili Vodka 1.5 oz"], "None", ["Agave .25 oz", "Cucumber (1 Slice Muddled)", "Ginger Beer 4 oz", "Lime Juice .25 oz"], ["Cucumber Slice (Length)", "Lime Wheel"]);
+ let pacificMule = new Drink("Pacific Mule", "Copper Mug", ["St. George Green Chili Vodka 1.5 oz"], "None", ["Agave .25 oz", "Cucumber (1 Slice Muddled)", "Ginger Beer 4 oz", "Lime Juice .25 oz"], ["Cucumber Slice (Length)"]);
  let paloma = new Drink("Paloma", "Rocks Glass", ["Altos Blanco 1.5 oz"], "None", ["Agave .5 oz", "Grapefruit Soda 3 oz", "Lime Juice .25 oz"], ["Lime Wheel"]);
  let pricklyPearMargarita = new Drink("Prickly Pear Margarita", "Coupe Glass", ["Don Julio Blanco 1.5 oz"], "Cointreau .5 oz", ["Lime Juice .75 oz", "Pineapple Juice .5 oz", "Prickly Pear Syrup 1 oz"], ["Lime Wheel"]);
  let sangria = new Drink("Sangria", "Wine Glass", ["St. George California Citrus Vodka .75 oz"], "None", ["Agave .5 oz", "Blackberry (3 Muddled)", "Lemon (1 Slice Muddled)", "Lolailo Sangria 4 oz", "Orange (1 Slice Muddled)"], ["Blackberry and Orange Slice (Flag)"])
@@ -39,7 +39,7 @@ class Drink{
  let tntRita = new Drink("T&T Rita", "Mason Jar", ["El Jimador 2 oz"], "Cointreau .5 oz", ["Agave 1 oz", "Lime Juice 2 oz"], ["Lime Wheel"]);
  let tntRumRunner = new Drink("T&T Rum Runner", "Pineapple Glass", ["Brugal Anejo Rum 1.25 oz", "Blue Chair Bay Banana Rum 1 oz"], ["Guava Puree .5 oz", "Lime Juice 1 oz", "Pineapple Juice 1 oz"], ["Dark Rum (Float)", "Pineapple Wedge and Leaf"]);
  let tntRumRunnerFB = new Drink("T&T Rum Runner (Fish Bowl)", "Fish Bowl", ["Brugal Anejo Rum 3.75 oz", "Blue Chair Bay Banana Rum 3 oz"], ["Guava Puree 1.5 oz", "Lime Juice 2.25 oz", "Pineapple Juice 2.25 oz"], ["Dark Rum (Float)", "Pineapple Wedge and Leaf"]);
- let tropicalMargarita = new Drink("Tropical Margarita", "Pineapple Glass", ["Corralejo Silver 1.5 oz"], "Cointreau .5 oz", ["Guava Puree .75 oz", "Lime Juice .75 oz", "Pineapple Juice .5 oz", "Vanilla (1 Dash)"], ["Pineapple Wedge"]);
+ let tropicalMargarita = new Drink("Tropical Margarita", "Pineapple Glass", ["Corralejo Silver 1.5 oz"], "Cointreau .5 oz", ["Guava Puree .75 oz", "Lime Juice .75 oz", "Pineapple Juice .5 oz", "Vanilla (1 Dash)"], ["Pineapple Wedge and Leaf"]);
  
  let drinks = [
      aldoronaFB,
@@ -93,9 +93,9 @@ class Drink{
    
   function verify(a,b) {
    if (_.isEqual(a,b) === true) {
-    return mix[0];
+    return mix[0] + "<br><br><br>...Placeholder for instructions...";
    } else {
-    return "Incorrect<br>Please Try Again";
+    return "Incorrect<br>Please Try Again<br><br><br>...Placeholder for instructions...";
    }
   };
   document.getElementById("modalText").innerHTML = verify(mixToObj, drinksFilter);
